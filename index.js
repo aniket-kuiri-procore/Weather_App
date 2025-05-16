@@ -6,7 +6,7 @@ const path = require('path');
 async function get_weather_details(city) {
     const https = require('https');
     let weatherDetails = {}
-    const apiKey = '2999625636d66de37263c74cb86edf32'; 
+    const apiKey = ''; // add your token here from openweathermap 
     //const city = 'Mumbai';
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`; // Use metric for Celsius
     return new Promise((resolve, reject) => { 
